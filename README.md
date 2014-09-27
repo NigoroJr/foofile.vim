@@ -20,10 +20,10 @@ Foo.java
 Not very pretty-looking, eh?
 
 ## What it does
-When you do `:FooFile`, this plugin will create a file in which you can write
+When you do `:FooFile`, this plugin creates a file in which you can write
 programs that you're not sure whether you want to keep it or not. For example,
 if you want to test out how an STL function you just learned works, you can
-`:fooFile cpp` and it'll let you write a sample program without making your
+`:FooFile cpp` and it'll let you write a sample program without making your
 "home" dirty.
 
 ## Example Configurations
