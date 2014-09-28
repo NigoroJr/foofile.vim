@@ -90,6 +90,15 @@ function! foofile#delete_foofiles(filetype)
   end
 endfunction
 
+function! foofile#save_as(filename)
+  let l:file_path = a:filename
+  if isdirectory(a:filename)
+    let l:file_path = a:filename . fnamemodify(bufname('%'), ':t')
+  endif
+
+  execute 'write' . l:file_path
+endfunction
+
 function! foofile#complete(arglead, cmdline, cursorpos)
   let l:dirs = split(glob(g:foofiles_path . '/*'), '\n')
   call map(l:dirs, 'fnamemodify(v:val, ":t")')
