@@ -35,7 +35,7 @@ COMMANDS					*foofile-commands*
 	Opens the most recent "foo file" for the current file type. When given
 	a file type, it opens the most recent for that file type.
 
-						*FooFileLast*
+						*FooFileSaveAs*
 :FooFileSaveAs path
 	If a file name is given, saves the currently-opened "foo file" to that
 	path. If a directory is given, saves to that directory with a file name
